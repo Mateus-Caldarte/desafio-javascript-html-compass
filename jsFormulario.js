@@ -10,7 +10,7 @@ function validar(){
         enviar();
     }
 }
-function enviar(){
+function validar(){
     let userName = document.getElementById('nome').value;
     let userEmail = document.getElementById('email').value;
     let userMsg = document.getElementById('mensagem').value;
