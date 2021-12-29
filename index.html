@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<title>Consultar Tabela</title>
+<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pushster&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="Stylecadastro.css"> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Pushster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-1">
+        <div class="container">
+            <div class="header-itens">
+                <a href="index.html"><h2>Consulta Carros</h2></a>
+                <div class="search-bar">
+                    <input placeholder="Buscar" type="text">
+                    <button>
+                        <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                         width="1244.000000pt" height="1280.000000pt" viewBox="0 0 1244.000000 1280.000000"
+                         preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.15, written by Peter Selinger 2001-2017
+                        </metadata>
+                        <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                        fill="#fff" stroke="none">
+                        <path d="M4025 12789 c-1029 -79 -1969 -501 -2704 -1214 -985 -955 -1456
+                        -2292 -1285 -3650 156 -1244 849 -2360 1899 -3059 193 -129 272 -175 470 -274
+                        452 -227 906 -362 1445 -429 207 -25 763 -25 970 0 404 50 752 138 1115 281
+                        251 98 600 283 819 433 l80 54 1075 -1073 c3835 -3827 3770 -3762 3828 -3795
+                        189 -105 411 -75 563 77 148 148 180 359 84 553 -21 43 -462 488 -2432 2459
+                        -2212 2213 -2404 2408 -2392 2425 8 10 40 47 70 83 714 836 1088 1927 1031
+                        3011 -32 610 -165 1136 -420 1664 -169 349 -340 615 -592 920 -106 128 -395
+                        417 -524 524 -687 569 -1463 900 -2336 996 -174 19 -598 27 -764 14z m780
+                        -949 c777 -118 1453 -463 1982 -1014 516 -536 829 -1194 930 -1951 24 -186 24
+                        -618 0 -810 -54 -416 -158 -758 -342 -1125 -297 -593 -779 -1101 -1360 -1432
+                        -964 -549 -2153 -590 -3152 -108 -975 470 -1667 1364 -1873 2420 -37 192 -51
+                        323 -57 555 -6 258 4 423 42 651 161 971 742 1831 1588 2348 453 278 935 434
+                        1512 490 22 2 164 3 315 1 217 -3 304 -8 415 -25z"/>
+                        </g>
+                        </svg>
+                        </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="banner" style="background-image: url(assets/banner.jpg);">
+        <div class="container">
+            <h2>Consulte a Tabela Fipe do seu carro e faça o melhor negócio!</h2>
+            <button data-toggle="modal" data-target="#modal">Cadastre-se aqui </button>
+            <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Cadastro</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="form-contato" onsubmit="validar()">
+                            <div class="form-group">
+                              <label for="nome">Nome:</label>
+                              <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." required data-rules="required">
+                
+                            </div>
+                            <div class="form-group">
+                              <label for="email">E-mail:</label>
+                              <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu e-mail..." required data-rules="required|e-mail">
+                            </div>
+                            <div class="form-group">
+                              <label for="mensagem">Mensagem:</label>
+                              <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Digite a mensagem..."></textarea>
+                            </div>
+                            <div class="alert alert-danger d-none">
+                                Preencha os campos necesssarios!
+                              </div>
+                            <div class="form-group text-center">
+                              <button onclick="validar()" type="submit" class="btn btn-primary">ENVIAR</button>
+                            </div>
+                          </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="arrow-down">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+            <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+                c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+                s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            <g>
+            </g>
+            </svg>
+        </div>
+    </div>
+    <section class="consulta">
+        <div class="container">
+            <h2>Consultar Fipe</h2> 
+            <div class="formulario">
+                <form action="resultado.html">
+                    <div class="buscar">
+                        <select name="tipo" id="tipo">
+                            <option value="0">Selecione o tipo de veículo</option>
+                            <option value="carros">Carros</option>
+                            <option value="motos">Motos</option>
+                            <option value="caminhoes">Caminhões</option>
+                        </select>
+                        <select name="marca" id="marca">
+                            <option value="0" selected disabled>Selecione a marca</option>
+                        </select>
+                        <select name="modelo" id="modelo">
+                            <option value="0" selected disabled>Selecione o modelo</option>
+                        </select>
+                        <select name="ano" id="ano">
+                            <option value="0" selected disabled>Selecione o ano</option>
+                        </select>
+                    </div>
+                    <button>Buscar</button>
+                </form>
+            </div>
+            <div class="carros" style="background-image: url(assets/carro.png);"></div>
+        </div>
+    </section>
+</body>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="jsFormulario.js"></script>
+    <script src="js/script.js"></script>
+</footer>
+</html>

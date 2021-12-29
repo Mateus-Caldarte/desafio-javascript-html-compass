@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Formulário de Contato</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="Stylecadastro.css"> 
+</head>
+<body>
+
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h1>Digite seus Dados</h1>
+          <form id="form-contato">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite o seu nome..." data-rules="required">
+
+            </div>
+            <div class="form-group">
+              <label for="email">E-mail:</label>
+              <input class="form-control" type="email" name="email" id="email" placeholder="Digite o seu e-mail..." data-rules="required|e-mail">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea class="form-control" name="mensagem" id="mensagem" placeholder="Digite a mensagem..."></textarea>
+            </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn btn-primary">ENVIAR</button>
+            </div>
+            <div class="alert alert-danger d-none">
+              Preencha o campo <span id="campo-erro"></span>!
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>  
+
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/formulario.js"></script>
+<script src="jsFormulario.js"></script>
+</body>
+</html>
