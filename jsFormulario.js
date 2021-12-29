@@ -33,4 +33,5 @@ function enviar(){
         "msg": `${userMsg}`,
     });
     xhr.send(data);
+    
 }
