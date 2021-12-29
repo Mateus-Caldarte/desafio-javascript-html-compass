@@ -7,3 +7,14 @@ function validar(){
          
     }
 }
+function enviar(){
+    var userName = document.getElementById('nome').value;
+    $.ajax({
+    type: "POST",
+    url: `https://prog-bolsas-api.herokuapp.com/api/${userName}`,
+    data: data,
+    success: function(data){ 
+        console.log(data);
+    },
+    });
+}
