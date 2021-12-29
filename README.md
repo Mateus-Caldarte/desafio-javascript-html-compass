@@ -1,4 +1,4 @@
 # desafio-javascript-html-compass
 
 
-## teste
+## Documentação e tecnologias usadas para o desenvolvimento do site
