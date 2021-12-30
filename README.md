@@ -1,4 +1,11 @@
-# desafio-javascript-html-compass
+# desafio-javascript-html-compass Documetação
 
 
-## Documentação e tecnologias usadas para o desenvolvimento do site
+## Funcionalidades do site
+
+-Consulta de Carros
+-Consulta de Motos
+-Consulta de Caminhões
+-Cadastro no sistema do site
+-Consulta de Valores de todos os veículos 
+-Detalhes do Veículo
