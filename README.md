@@ -41,3 +41,11 @@
 
 - https://deividfortuna.github.io/fipe/?ref=devresourc.es
 - https://prog-bolsas-api.herokuapp.com/
+
+## observações
+
+- Dentro da pasta css no final da página, está o arquivo styles.css com a estilização de todos as páginas
+- Dentro da pasta js no final da página, está o arquivo script.js com as ligações da primeira api
+- aquivo index.html é a página home
+- os arquivos cadastros.html e jsFormulario.js está o bootstrap da pagina de cadastros e o envio de dados com a api do Leonardo
+- o arquivo resultado.html está a página de resposta da pesquisa
